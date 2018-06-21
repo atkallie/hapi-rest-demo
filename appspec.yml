@@ -8,5 +8,5 @@ permissions:
     mode: 777
 hooks:
  ApplicationStart:
-   - location: startApp.sh
+   - location: /startApp.sh
      timeout: 10
