@@ -1,11 +1,9 @@
 "use strict";
 
 var request = require('supertest');
-var constants = require('../../src/config/constants');
-
 require('../../index');
 require('should');
-var server = request.agent("http://localhost:${constants.application.port}");
+var server = request.agent("http://localhost:3000");
 
 describe('Task routes', function () {
     describe('GET /products', function () {
