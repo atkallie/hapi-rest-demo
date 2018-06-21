@@ -4,9 +4,9 @@ files:
   - source: /
     destination: /myapp
 permissions:
-  - object: /myapp/startApp.sh
+  - object: /myapp/scripts/startApp.sh
     mode: 777
 hooks:
  ApplicationStart:
-   - location: /startApp.sh
-     timeout: 10
+   - location: scripts/startApp.sh
+     timeout: 300
