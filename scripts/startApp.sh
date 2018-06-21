@@ -5,4 +5,4 @@ export DB_PRD_USER=kal
 export DB_PRD_PASS=Allah5764909496
 export NODE_HOST=localhost
 export NODE_PORT=8080
-nohup node /myapp/index.js > /dev/null 2>&1 &
+node /myapp/index.js > /dev/null 2> /dev/null < /dev/null &
