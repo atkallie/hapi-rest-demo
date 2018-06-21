@@ -54,9 +54,9 @@ module.exports = function() {
 				'database' : 'dellstore2'
 			},
 			'development' : {
-				'host' : 'dellstore2.cgffdp2lclff.us-west-2.rds.amazonaws.com',
-				'user' : 'spidertutorial',
-				'password' : 'spidertutorial',
+				'host' : 'tutorial-db-instance.cnqsbts5ilec.us-east-2.rds.amazonaws.com',
+				'user' : 'kal',
+				'password' : 'Allah5764909496',
 				'database' : 'dellstore2'
 			}
 		};
@@ -65,7 +65,7 @@ module.exports = function() {
 	function applicationConfig(){
 		return {
 			'production' : {
-				'url' : 'https://' + process.env.NODE_HOST + ':' + 
+				'url' : 'https://' + process.env.NODE_HOST + ':' +
 					process.env.NODE_PORT,
 				'host' : process.env.NODE_HOST,
 				'port' : process.env.NODE_PORT
