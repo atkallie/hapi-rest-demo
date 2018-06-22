@@ -1,12 +1,12 @@
 version: 0.0
 os: linux
 files:
-  - source: /
-    destination: /myapp
+    - source: /
+        destination: /myapp
 permissions:
-  - object: /myapp/scripts/startApp.sh
-    mode: 777
+    - object: /myapp/scripts/startApp.sh
+        mode: 777
 hooks:
- ApplicationStart:
-   - location: scripts/startApp.sh
-     timeout: 300
+    AfterInstall:
+        - location: scripts/startApp.sh
+          timeout: 300
