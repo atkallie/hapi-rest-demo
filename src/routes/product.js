@@ -10,9 +10,9 @@ module.exports = function () {
             path: '/products/{product_id}',
             handler: productController.findByID
         },
-         {
+        {
              method: 'GET',
-             path: '/products/title/{title}',
+             path: '/products/using-title/{title}',
              handler: productController.findByName
         },
         {
