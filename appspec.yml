@@ -2,10 +2,10 @@ version: 0.0
 os: linux
 files:
     - source: /
-        destination: /myapp
+      destination: /myapp
 permissions:
     - object: /myapp/scripts/startApp.sh
-        mode: 777
+      mode: 777
 hooks:
     AfterInstall:
         - location: scripts/startApp.sh
